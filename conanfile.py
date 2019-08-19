@@ -1,14 +1,14 @@
 from conans import ConanFile, CMake, tools
 
 class mklDynamic(ConanFile):
-    name = "intel-openmp"
+    name = "openmp"
     version = "8.0.1"
-    url = "https://github.com/shellshocked2003/intel-openmp"
+    url = "https://github.com/shellshocked2003/openmp"
     homepage = "https://anaconda.org/anaconda/openmp"
     author = "Michael Gardner <mhgardner@berkeley.edu>"
     license = "Intel Simplified Software License"   
     settings = "os", "compiler", "build_type", "arch"
-    description = "Intel OpenMP Shared Libraries"
+    description = "OpenMP Shared Libraries"
     exports_sources = ["CMakeLists.txt"]
     generators = "cmake"
     build_policy = "missing"
