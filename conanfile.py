@@ -7,7 +7,7 @@ class mklDynamic(ConanFile):
     homepage = "https://anaconda.org/anaconda/intel-openmp"
     author = "Michael Gardner <mhgardner@berkeley.edu>"
     license = "Intel Simplified Software License"
-    settings = {"os": None, "compiler": None, "build_type": None, "arch": ["x86_64"]}
+    settings = {"os": None, "arch": ["x86_64"]}
     description = "Intel OpenMP Shared Libraries"
     exports_sources = ["CMakeLists.txt"]
     generators = "cmake"
